@@ -1,0 +1,9 @@
+$body-color: white;
+$ryan: url('https://pbs.twimg.com/profile_images/422161276639256576/TgJdvUb1.jpeg');
+
+body {
+    color: $body-color;
+    background-image: $ryan;
+    text-align: center;
+    padding-top: 25%;
+}
