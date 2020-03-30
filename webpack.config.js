@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
+const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin');
 
 module.exports = {
     entry: './src/app/index.js',
@@ -30,14 +31,18 @@ module.exports = {
                 ],
             },
             {
-                
+                test: /\.pug$/,
+                use: [
+                    'pug-loader',
+                ]
             },
         ]
     },
     plugins: [
         new HtmlWebpackPlugin ({
-            template: __dirname + "/src/public/index.html",
-            inject: 'body'
+            template: __dirname + "/src/index.pug",
+            //inject: 'body'
+            filename: './index.html',
         })
     ],
     devServer: {

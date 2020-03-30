@@ -1,9 +1,12 @@
+@import "./blocks/header/header.scss";
+
 $body-color: white;
 $ryan: url('https://pbs.twimg.com/profile_images/422161276639256576/TgJdvUb1.jpeg');
 
-body {
+body:not(header) {
     color: $body-color;
     background-image: $ryan;
     text-align: center;
     padding-top: 25%;
-}
+    text-shadow: 1px 1px 2px black, 0 0 1em red;
+};
