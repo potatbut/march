@@ -1,6 +1,8 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin');
+const webpack = require('webpack');
+
 
 module.exports = {
     entry: './src/app/index.js',
@@ -43,7 +45,11 @@ module.exports = {
             template: __dirname + "/src/index.pug",
             //inject: 'body'
             filename: './index.html',
-        })
+        }),
+        new webpack.ProvidePlugin ({
+            $: 'jquery',
+            jQuery: 'jquery'
+        }),
     ],
     devServer: {
         contentBase: '/src/public',
