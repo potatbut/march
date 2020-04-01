@@ -59,8 +59,8 @@ module.exports = {
         new webpack.ProvidePlugin ({
             $: 'jquery',
             jQuery: 'jquery'
-        }),
-       /*  new CopyPlugin ([
+        }),/* 
+        new CopyPlugin ([
             {from: 'src/fonts', to: 'dist/fonts'},
         ]) */
     ],
