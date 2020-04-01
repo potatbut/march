@@ -2,6 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin');
 const webpack = require('webpack');
+/* const CopyPlugin = require('copy-webpack-plugin') */
 
 
 module.exports = {
@@ -23,6 +24,7 @@ module.exports = {
                     'style-loader',
                     'css-loader',
                     'sass-loader',
+                    /* 'resolve-url-loader', */
                 ]
             },
             {
@@ -38,6 +40,14 @@ module.exports = {
                     'pug-loader',
                 ]
             },
+            {
+                test: /\.(woff(2)?|ttf|otf|eot|svg)$/,
+                /* exclude: /node_modules/, */
+                loader: 'file-loader',
+                options: {
+                    name: '[name].[ext]'
+                }
+            },
         ]
     },
     plugins: [
@@ -50,6 +60,9 @@ module.exports = {
             $: 'jquery',
             jQuery: 'jquery'
         }),
+       /*  new CopyPlugin ([
+            {from: 'src/fonts', to: 'dist/fonts'},
+        ]) */
     ],
     devServer: {
         contentBase: '/src/public',
