@@ -1,0 +1,31 @@
+.menu {
+    color: #4B5D68;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+li {
+    display: inline;
+}
+li a {
+    margin: 10%;
+    position: relative;
+    align-items: center;
+    text-decoration: none;
+    color: #4B5D68;
+    outline: 0;
+}
+li a:active {
+    background-color: fff;
+    text-decoration: none;
+    text-shadow: 0.5px 0px 2px #212353 ;
+    color: #212353;
+}
+a:active, :hover, :focus, :visited {
+    outline: none !important;
+    text-decoration: none;
+    outline-offset: 0;
+    box-shadow: none;
+    border: none;
+    background-color: white;
+}

@@ -26,14 +26,14 @@ module.exports = {
                     'sass-loader',
                     /* 'resolve-url-loader', */
                 ]
-            },
+            },/* 
             {
                 test: /\.css$/i,
                 use: [
                     'style-loader',
                     'css-loader',
                 ],
-            },
+            }, */
             {
                 test: /\.pug$/,
                 use: [
@@ -41,9 +41,9 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(woff(2)?|ttf|otf|eot|svg)$/,
-                /* exclude: /node_modules/, */
-                loader: 'file-loader',
+                test: /\.(woff(2)?|ttf|otf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+                exclude: /node_modules/,
+                loader: 'url-loader',
                 options: {
                     name: '[name].[ext]'
                 }

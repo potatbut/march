@@ -1,0 +1,6 @@
+mixin list(items=[])
+    ul
+        each item in items
+            li.menu
+                a(href=item.href)=item.text
+                 
