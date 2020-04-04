@@ -1,3 +1,7 @@
+@import "../logo/logo.scss";
+@import "../menu/menu.scss";
+@import "../button_demo/button_demo.scss";
+
 header {
     max-width: 1120px;
     height: 100px;
@@ -8,5 +12,31 @@ header {
     margin-right: auto;
     margin-top: 30px;
     align-items: center;
+}
+
+@media screen and (max-width: 670px) {
+    .button_demo {
+        width: 150px;
+        height: 30px;
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .logo {
+        display: none;
+    }
+    li a {
+        margin: 3%
+    } 
+    .button_demo {
+        margin-left: 3%
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .menu_item {
+        margin: 3%;
+        display: inline-block;
+    }
 }
 

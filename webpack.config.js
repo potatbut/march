@@ -2,7 +2,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin');
 const webpack = require('webpack');
+/* const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin; */
 /* const CopyPlugin = require('copy-webpack-plugin') */
+var nodeExternals = require('webpack-node-externals');
 
 
 module.exports = {
@@ -11,6 +13,8 @@ module.exports = {
         path: path.resolve(__dirname,'dist'),
         filename: 'bundle.js',
     },
+    target: 'node',
+    externals: [nodeExternals()],
     module: {
         rules: [
             { 
@@ -24,16 +28,12 @@ module.exports = {
                     'style-loader',
                     'css-loader',
                     'sass-loader',
-                    /* 'resolve-url-loader', */
                 ]
-            },/* 
-            {
-                test: /\.css$/i,
-                use: [
-                    'style-loader',
-                    'css-loader',
-                ],
-            }, */
+            },{
+                test: /\.(png|jpg|gif|svg)$/i,
+                exclude: [/node_modules/,/fonts/],
+                use: ['file-loader'],
+            },
             {
                 test: /\.pug$/,
                 use: [
@@ -41,8 +41,8 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(woff(2)?|ttf|otf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-                exclude: /node_modules/,
+                test: /\.(woff(2)?|ttf|otf|eot|svg)$/,
+                exclude: [/node_modules/,/logo/],
                 loader: 'url-loader',
                 options: {
                     name: '[name].[ext]'
@@ -59,7 +59,9 @@ module.exports = {
         new webpack.ProvidePlugin ({
             $: 'jquery',
             jQuery: 'jquery'
-        }),/* 
+        }),
+        /* new BundleAnalyzerPlugin() */
+        /* 
         new CopyPlugin ([
             {from: 'src/fonts', to: 'dist/fonts'},
         ]) */

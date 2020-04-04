@@ -1,9 +1,35 @@
-@import "./blocks/button_demo/button_demo.scss";
 @import "./styles/fontFace.scss";
-@import "./blocks/logo/logo.scss";
 @import "./blocks/header/header.scss";
-@import "./blocks/menu/menu.scss";
+@import "./blocks/button_learn-more/button_learn-more.scss";
 
 body {
     @extend %fontSand;
+}
+.about {
+    margin: auto;
+    width: 1248px;
+    height: 564px;
+}
+
+.about_p {
+    
+    position: absolute;
+}
+
+.about_title {
+    width: 645px;
+    height: 184px;
+    font-size: 80px;
+    color: #212353;
+}
+.about_description {
+    width: 380px;
+    height: 120px;
+    color: #4B5D68;
+}
+
+.about_image {
+    display: inline-block;
+    margin-left: 30%;
+    margin-top: 15%;
 }

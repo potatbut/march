@@ -1,6 +1,6 @@
 mixin list(items=[])
-    ul
+    ul.menu
         each item in items
-            li.menu
+            li.menu_item
                 a(href=item.href)=item.text
                  

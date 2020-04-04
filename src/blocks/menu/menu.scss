@@ -4,7 +4,7 @@
     padding: 0;
     margin: 0;
 }
-li {
+.menu_item {
     display: inline;
 }
 li a {
@@ -22,10 +22,6 @@ li a:active {
     color: #212353;
 }
 a:active, :hover, :focus, :visited {
-    outline: none !important;
+    outline: none;
     text-decoration: none;
-    outline-offset: 0;
-    box-shadow: none;
-    border: none;
-    background-color: white;
 }
