@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --history-api-fallback --inline --progress --open",
+    "dev": "webpack-dev-server --history-api-fallback --inline --progress --open --watch",
     "build": "webpack --mode production"
   },
   "author": "",
@@ -16,7 +16,7 @@
     "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^3.4.2",
     "file-loader": "^6.0.0",
-    "html-webpack-plugin": "^4.0.3",
+    "html-webpack-plugin": "^4.0.4",
     "html-webpack-pug-plugin": "^2.0.0",
     "node-sass": "^4.13.1",
     "pug": "^2.0.4",
