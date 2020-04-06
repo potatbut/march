@@ -6,14 +6,15 @@ head
 
 include ./blocks/header/header.pug
 include ./blocks/button_learn-more/button_learn-more.pug
-
+include ./blocks/description_block/description_block.pug
 
 div.about
-  div.about_p
+  .about_p
     p.about_title Save your data storage here.
     p.about_description Data Warehouse is a data storage area that has been tested for security, so you can store your data here safely but not be afraid of being stolen by others.
     +button_learn-more('Learn more')
   figure.container_about_image
     include ./blocks/about_image/about_image.svg
++description_block()
   
   

@@ -1,6 +1,7 @@
 @import "./styles/fontFace.scss";
 @import "./blocks/header/header.scss";
 @import "./blocks/button_learn-more/button_learn-more.scss";
+@import "./blocks/description_block/description_block.scss";
 
 body {
     @extend %fontSand;

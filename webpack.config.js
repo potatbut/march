@@ -32,7 +32,15 @@ module.exports = {
             },{
                 test: /\.(png|jpg|gif|svg)$/i,
                 exclude: [/node_modules/,/fonts/],
-                use: ['file-loader'],
+                use: ['file-loader', 
+                    {
+                        loader: 'image-webpack-loader',
+                        options: {
+                            bypassOnDebug: true,
+                            disable: true,
+                        }
+                    }
+                ],
             },
             {
                 test: /\.pug$/,
@@ -53,7 +61,6 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin ({
             template: __dirname + "/src/index.pug",
-            //inject: 'body'
             filename: './index.html',
         }),
         new webpack.ProvidePlugin ({
