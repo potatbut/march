@@ -10,11 +10,13 @@ include ./blocks/description_block/description_block.pug
 
 div.about
   .about_p
-    p.about_title Save your data storage here.
+    p.about_title #[strong Save your data storage here.]
     p.about_description Data Warehouse is a data storage area that has been tested for security, so you can store your data here safely but not be afraid of being stolen by others.
     +button_learn-more('Learn more')
   figure.container_about_image
-    include ./blocks/about_image/about_image.svg
-+description_block()
++description_block(
+  'We are a high-level data storage bank',
+  'The place to store various data that you can access at any time through the internet and where you can carry it. This very flexible storage area has a high level of security. To enter into your own data you must enter the password that you created when you registered in this Data Warehouse.'
+  )
   
   

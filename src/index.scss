@@ -9,7 +9,7 @@ body {
 .about {
     margin: auto;
     width: 1248px;
-    height: 564px;
+    height: 650px;
 }
 
 .about_p {
@@ -27,13 +27,16 @@ body {
     height: 120px;
     color: #4B5D68;
 }
-
-.about_image {
-    display: inline-block;
-    margin-left: 30%;
-    margin-top: 15%;
+.container_about_image {
+    width: 1248px;
+    height: 650px;
+    background-image: url(./blocks/about_image/about_image.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    margin: 0;
 }
-@media screen and (max-width: 1200px) {
+
+/* @media screen and (max-width: 1200px) {
     .about_image {
         display: none;
     }
@@ -85,4 +88,4 @@ body {
     .about_description {
         width: 320px;
     }
-}
+} */
