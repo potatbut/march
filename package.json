@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --history-api-fallback --inline --progress --watch --open",
+    "dev": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production"
   },
   "author": "",

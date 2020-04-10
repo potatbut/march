@@ -13,8 +13,13 @@ module.exports = {
         path: path.resolve(__dirname,'dist'),
         filename: 'bundle.js',
     },
-    target: 'node',
-    externals: [nodeExternals()],
+    /* target: 'node',
+    externals: [nodeExternals()], */
+    devServer: {
+        /* contentBase: __dirname + '/dist',
+        compress: true, */
+        port: 4200,
+    },
     module: {
         rules: [
             { 
@@ -73,9 +78,5 @@ module.exports = {
             {from: 'src/fonts', to: 'dist/fonts'},
         ]) */
     ],
-    devServer: {
-        contentBase: '/src/public',
-        port: 7700,
-    }
     
 }

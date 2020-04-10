@@ -36,22 +36,15 @@ body {
     margin: 0;
 }
 
-/* @media screen and (max-width: 1200px) {
-    .about_image {
-        display: none;
-    }
+@media screen and (max-width: 1200px) {
     .about {
-        width: 645px;
-        text-align: center;
+        width: 1100px;
     }
-    .about_p {
-        position: relative;
-    }
-    .about_description {
-        margin: auto;
+    .container_about_image {
+        width: 1100px;
     }
 }
-@media screen and (max-width: 650px) {
+/* @media screen and (max-width: 650px) {
     .about_title{
         font-size: 60px;
         position: relative;
@@ -88,4 +81,4 @@ body {
     .about_description {
         width: 320px;
     }
-} */
+}  */
