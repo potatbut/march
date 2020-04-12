@@ -25,3 +25,30 @@
     font-size: 18px;
     color: #4B5D68;
 }
+
+@media screen and (max-width: 1200px) {
+    .description_block {
+        width: 95%;
+    }
+    .description_text {
+        text-align: center;
+        width: 300px;
+        height: 310px;
+        margin-left: 60%;
+        margin-top: 5%;
+    }
+}
+@media screen and (max-width: 850px) {
+    .description_block {
+        align-items: center;
+        margin: auto;
+        display: flex;
+        background-image: none;
+        height: 500px;
+    }
+    .description_text, .description_title, .description_p {
+        align-items: center;
+        margin: auto;
+    }
+    
+}
