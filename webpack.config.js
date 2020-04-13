@@ -3,7 +3,7 @@ const path = require('path');
 const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin');
 const webpack = require('webpack');
 /* const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin; */
-/* const CopyPlugin = require('copy-webpack-plugin') */
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 var nodeExternals = require('webpack-node-externals');
 
 
@@ -73,10 +73,9 @@ module.exports = {
             jQuery: 'jquery'
         }),
         /* new BundleAnalyzerPlugin() */
-        /* 
-        new CopyPlugin ([
-            {from: 'src/fonts', to: 'dist/fonts'},
-        ]) */
+        new CopyWebpackPlugin ([
+            {from: 'src/img', to: './img'},
+        ]) 
     ],
     
 }
