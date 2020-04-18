@@ -1,3 +1,5 @@
-import '../index.scss'
-/* import '../blocks/logo/logo.png'
- */
+import 'jquery';
+import '../index.scss';
+
+$('#item'); 
+jQuery('#item');

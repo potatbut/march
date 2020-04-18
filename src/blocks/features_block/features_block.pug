@@ -1,0 +1,7 @@
+mixin features_block(img, title, description)
+    .features-enumeration
+        img(src=img class="image")
+        p.features_block_title=title
+        p.features_block_description=description
+        button.features_button
+            a(href="#", class="features_button")="Learn more ➜"

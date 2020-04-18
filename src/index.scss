@@ -2,6 +2,8 @@
 @import "./blocks/header/header.scss";
 @import "./blocks/button_learn-more/button_learn-more.scss";
 @import "./blocks/description_block/description_block.scss";
+@import "./blocks/features_block/features_block.scss";
+
 
 body {
     @extend %fontSand;
@@ -34,6 +36,26 @@ body {
     background-repeat: no-repeat;
     background-position: right bottom;
     margin: 0;
+}
+.features {
+    width: 584px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10%;
+    .features_title {
+        color: #212353;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .features_desc {
+        color: #4B5D68;
+        font-size: 18px;
+    }
+}
+.features_block {
+    margin: auto;
+    width: 1088px;
+    height: 993px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -89,37 +111,5 @@ body {
         width: 0;
         height: 0;
     }
-    /* .button_learn-more {
-        
-    } */
+    
 }
-
-/*@media screen and (max-width: 550px) {
-    .about {
-        width: 400px;
-    }
-    .about_title {
-        font-size: 40px;
-        width: 400px;
-        height: 100px;
-        margin: 0;
-    }
-    .about_description {
-        
-        margin: 0;
-    }
-}
-@media screen and (max-width: 400px) {
-    .about {
-        text-align: left;
-        width: 320px;
-    }
-    .about_title {
-        font-size: 30px;
-        width: 320px;
-        margin: 0;
-    }
-    .about_description {
-        width: 320px;
-    }
-}  */
