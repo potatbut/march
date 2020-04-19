@@ -3,6 +3,9 @@
 @import "./blocks/button_learn-more/button_learn-more.scss";
 @import "./blocks/description_block/description_block.scss";
 @import "./blocks/features_block/features_block.scss";
+@import "./blocks/rs/slick.scss";
+@import "./blocks/rs/slick-theme.scss";
+@import "./blocks/slides/slides.scss";
 
 
 body {
@@ -54,6 +57,7 @@ body {
 }
 .features_block {
     margin: auto;
+    margin-bottom: 50px;
     width: 1088px;
     height: 993px;
 }
@@ -112,4 +116,34 @@ body {
         height: 0;
     }
     
+}
+.testimonials_block {
+    padding: 40px;
+    margin: auto;
+    width: 900px;
+    height: 350px;
+    background: rgba(156, 105, 226, 0.5);
+    border-radius: 50px;
+}
+.testimonials_title {
+    margin: auto;
+    text-align: center;
+    font-size: 40px;
+    width: 405px;
+    height: 52px;
+    color: #ffffff;
+}
+.slider {
+    margin: auto;
+}
+.slick-list{
+    margin: auto;
+    width: 600px;
+    height: 330px;
+} 
+.slick-arrow {
+    margin: auto;
+}
+.slick-slide {
+    margin: 0 10px;
 }

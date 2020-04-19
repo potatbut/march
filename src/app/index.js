@@ -1,5 +1,9 @@
-import 'jquery';
-import '../index.scss';
+import * as $ from 'jquery'
+import "../index.scss"
 
-$('#item'); 
-jQuery('#item');
+import "../blocks/rs/slick.js"
+
+
+$(document).ready(function(){
+      $('.demo').slick();
+    });

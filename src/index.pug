@@ -11,6 +11,7 @@ include ./blocks/header/header.pug
 include ./blocks/button_learn-more/button_learn-more.pug
 include ./blocks/description_block/description_block.pug
 include ./blocks/features_block/features_block.pug
+include ./blocks/slides/slides.pug
 
 
 div.about
@@ -47,6 +48,21 @@ div.about
     "Security Code",
     "Data Security is one of our best facilities. Allows for your files to be safer. The file can be secured with a code or password that you created, so only you can open the file."
   )
+
+.testimonials_block
+  .testimonials_title Testimonials
+  .slider.demo
+    +slide(
+      "./img/avatar2.png",
+      "Ryan Gosling | actor ",
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia et impedit neque totam aperiam libero voluptatibus quaerat, labore doloremque? Sapiente facere, expedita qui nostrum reprehenderit pariatur exercitationem molestias beatae porro."
+    )
+    +slide(
+      "./img/avatar3.png",
+      "Filthy Frank | musician",
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia et impedit neque totam aperiam libero voluptatibus quaerat, labore doloremque? Sapiente facere, expedita qui nostrum reprehenderit pariatur exercitationem molestias beatae porro."
+    )
+    
 
 
 

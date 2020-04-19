@@ -1,0 +1,25 @@
+.slide {
+    background-color: white;
+    margin-top: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 20px 0px rgba(80, 54, 117, 0.3);
+}
+.test_name{
+    margin-top: 40px;
+    margin-left: 20px;
+    /* margin: 20px; */
+    float: left;
+    color: #212353;
+    font-weight: bold;
+}
+.test_comment {
+    margin: 20px;
+    width: 385px;
+    height: 130px;
+    float: left;
+    color: #4B5D68;
+}
+.avatar {
+    float: left;
+    margin: 20px;
+}
