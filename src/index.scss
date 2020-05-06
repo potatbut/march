@@ -88,8 +88,13 @@ body {
 .slick-arrow::before {
     color:#212353;
 }
-.try_free_text {
-    margin: auto;
+.try_free_block {
+    border-top: 2px solid rgba(156,	105, 226, 0.2);
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    margin-top: 5%;
+    padding-top: 5%;
 }
 .try_free_title {
     font-weight: bold;
